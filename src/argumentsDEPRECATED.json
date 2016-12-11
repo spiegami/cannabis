@@ -1,0 +1,25 @@
+{
+  "argomenti": {
+    "senato": [
+      "ruolo_e_funzioni",
+      "modalità_di_elezione",
+      "il_procedimento_legislativo",
+      "diritti_dei_senatori_e_statuto_delle_minoranze"
+    ],
+    "stato-regioni": [
+      "conflitti_di_competenza"
+    ],
+    "altro": [
+      "formulazione_e_discussione_dei_decreti_legge",
+      "garanzie",
+      "iniziativa_popolare",
+      "semplificazione_istituzionale"
+    ]
+  },
+  "oltre_il_merito": [
+    "riforma_storica_o_conservatrice",
+    "rischi_per_la_democrazia",
+    "il_metodo",
+    "questioni_politiche"
+  ]
+}

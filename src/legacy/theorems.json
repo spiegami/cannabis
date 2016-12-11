@@ -1,0 +1,121 @@
+{
+	"spiegamiSI": {
+		"claim": "E' giusto cambiare il ruolo e le funzioni del Senato come previsto dalla Riforma",
+		"connector": "o",
+		"reasons": [
+			{"claim": "per ragioni storiche"},
+			{"connector": "e",
+				"reasons": [{"claim": ""}]
+			},
+			{"claim": "perché se viene eletto diversamente dalla Camera è giusto che abbia funzioni diverse"},
+			{"connector": "e",
+				"reasons": [{"claim": ""}]
+			},
+			{"claim": "perché il nuovo rapporto fiduciario supera i problemi derivanti da due sistemi elettorali diversi"},
+		]
+	},
+	// "spiegamiSIbad":
+	//   {"E' giusto cambiare il ruolo e le funzioni del Senato come previsto dalla Riforma": [
+	//     {"per ragioni storiche": {
+	//       "perché era previsto anche dalla riforma del Titolo V del 2001": {},
+	//       "perché non è come i Costituenti avrebbero voluto": {
+	//         "Il Senato voluto dai nostri costituenti doveva essere rappresentativo delle Regioni ed essere molto diverso dalla Camera, per durata in carica e sistema elettorale. Ma poi, per una scelta delle maggioranze di governo, l'istituzione delle regioni venne ritardata di 22 anni, e con una riforma costituzionale venne stabilita la perfetta parità delle due Camere": {}
+	//       }
+	//     }},
+	//     [
+	//       {"perché coinvolge stabilmente le regioni": {}},
+	//       {"coinvolgere stabilmente le regioni è buono": [{
+	//         "coinvolgere stabilmente le regioni riduce le conflittualità e i ritardi nelle discussioni delle leggi": {
+	//           "le regioni devono poter decidere quali siano gli interessi in gioco prima che le leggi entrino in vigore": {},
+	//           "l'intervento delle regioni prima dell'entrata in vigore delle leggi riduce il ricorso alla Corte Costituzionale": {}
+	//         }},
+	//         {"coinvolgere stabilmente le regioni aumenta il tasso di democraticità del nostro sistema": {}}
+	//       ]},
+	//     ],
+	//     {"perché se viene eletto diversamente dalla Camera è giusto che abbia funzioni diverse": {}},
+	//     [
+	//       {"perché è in linea con le esperienze di altri Paesi europei": {
+	//         "in Europa, tutti i Senati rappresentativi delle autonomie non danno la fiducia al Governo e partecipano alla legislazione solo sulle questioni più importanti, mentre svolgono funzioni di controllo connesse con il fatto che i Senatori rappresentano le autonomie": {}
+	//       }},
+	//       {"questi altri Paesi europei in generale hanno funzionato bene": {}}
+	//     ],
+	//     {"perché il nuovo rapporto fiduciario supera i problemi derivanti da due sistemi elettorali diversi": {
+	//       "per quanto riguarda l'Italicum, tutte le maggioranze qualificate restano o sono rafforzate": {
+	//         "il premio di maggioranza, da solo, non permette ad un'unica forza politica di eleggere le più alte cariche dello Stato e degli organi di giustizia": {}
+	//       },
+	//       "una forza politica sola deve fare comunque i conti con possibili dissensi interni, pur contando su 340 seggi ": {}
+	//     }}
+	//   ]},
+	"theorems": {
+		"claim": "prendo l'ombrello",
+		"connector": "o",
+		"reasons": [
+			{
+				"connector": "e",
+		  	"reasons": [
+		  		{
+		  			"connector": "o",
+		  			"reasons": [
+		  				{"claim": "piove"},
+		  				{"claim": "sta per piovere",
+		  					"connector": "e",
+		  					"reasons": [
+		  						{"claim": "ci sono nuvole cariche di pioggia"},
+		  						{"claim": "il vento sta spingendo le nuvole qui"}
+		  					]
+		  				}
+		  			]
+			  	},
+		  		{"claim": "non voglio bagnarmi"}
+		  	]
+		  },
+		  {
+		  	"connector": "e",
+		  	"reasons": [
+		  		{"claim": "devo stare al sole per ore"},
+		  		{"claim": "non voglio scottarmi"}
+				]
+		  }
+		]
+	},
+	"zero": {
+		"claim": "prendo l'ombrello"
+	},
+	"uno": {
+		"claim": "prendo l'ombrello",
+		"connector": "o",
+		"reasons": [
+	    {"claim": "piove"}
+	  ]
+	},
+	"due": {
+		"claim": "prendo l'ombrello",
+		"connector": "e",
+		"reasons": [
+	    {"claim": "piove"},
+	    {"claim": "quando piove prendo l'ombrello"}
+	  ]
+	},
+	"tre": {
+		"claim": "prendo l'ombrello",
+		"connector": "o",
+	  "reasons": [
+	    {"claim": "piove"},
+	    {"claim": "sta per piovere"}
+	  ]
+	},
+	"quattro": {
+		"claim": "prendo l'ombrello",
+		"connector": "e",
+		"reasons": [
+	    {
+	    	"connector": "o", 
+	    	"reasons": [
+	    		{"claim": "piove"},
+	    		{"claim": "sta per piovere"}
+	    	]
+	    },
+	    {"claim": "quando piove voglio avere con me l'ombrello"}
+	  ]
+	}
+}
