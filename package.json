@@ -1,6 +1,6 @@
 {
-  "name": "spiegami",
-  "version": "0.1.1",
+  "name": "cannabis",
+  "version": "0.1.0",
   "private": true,
   "devDependencies": {
     "gh-pages": "^0.11.0",
@@ -18,5 +18,5 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://carlomartinucci.github.io/spiegami"
+  "homepage": "http://spiegami.github.io/cannabis"
 }
