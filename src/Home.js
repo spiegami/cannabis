@@ -12,19 +12,19 @@ export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      referendum: props.route.referendum
+      cannabis: props.route.cannabis
     }
   }
   render() {
-    const argomenti = argumentsFromTopic(this.state.referendum)
+    const argomenti = argumentsFromTopic(this.state.cannabis)
     function getTemi(argomenti) {
       return Object.keys(argomenti).map(
-        (tema) => <div key={tema + "-wrapper"} className="button-tema-wrapper"><RaisedButton primary label={humanize(tema)} containerElement={<Link to={`referendum/${tema}/${argomenti[tema][0]}`} />} /></div>
+        (tema) => <div key={tema + "-wrapper"} className="button-tema-wrapper"><RaisedButton primary label={humanize(tema)} containerElement={<Link to={`${tema}/${argomenti[tema][0]}`} />} /></div>
       )
     }
     function getSingoliArgomentiDiUnTema(tema) {
       const argg = argomenti[tema].map(
-        (argomento) => <FlatButton key={argomento} label={humanize(argomento)} style={{top: "12px"}} containerElement={<Link to={`/referendum/${tema}/${argomento}`} />}/>
+        (argomento) => <FlatButton key={argomento} label={humanize(argomento)} style={{top: "12px"}} containerElement={<Link to={`${tema}/${argomento}`} />}/>
       )
       return (
         <div key={tema + "-div"} className="flat-argomenti">
@@ -59,7 +59,7 @@ export default class Home extends Component {
         }}>
         <div className="hero text-center">
           <h1 id="Spiegami" className="spiegami">Spiegami</h1>
-          <h3>il Referendum Costituzionale <br/> del 4 dicembre 2016</h3>
+          <h3>la legalizzazione della Cannabis <br/> in Italia</h3>
           <RaisedButton
             secondary
             style={{height: "calc(24px + 3vw)", marginTop: "3em", marginBottom: "3em"}}
@@ -67,7 +67,7 @@ export default class Home extends Component {
             overlayStyle={{height: "calc((12px + 1vw)*2.7)", lineHeight: "calc((12px + 1vw)*2.7)"}}
             labelStyle={{fontSize: "calc(12px + 1vw)", padding: "0 calc((12px + 1vw)*1.2)"}}
             label="Va bene, spiegami tutto"
-            containerElement={<Link to={`/referendum/${Object.keys(argomenti)[0]}/${argomenti[Object.keys(argomenti)[0]][0]}`} />}
+            containerElement={<Link to={`/${Object.keys(argomenti)[0]}/${argomenti[Object.keys(argomenti)[0]][0]}`} />}
           />
         </div>
         <div className="text-center fb-share"><FacebookShare/></div>

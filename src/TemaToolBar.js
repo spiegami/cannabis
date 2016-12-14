@@ -56,7 +56,7 @@ export default class TemaToolBar extends Component {
             key={genUnique()}
             hoverStyle={{...linkStyle, backgroundColor: 'rgb(230, 230, 230)', color: '#000'}}
             notHoverStyle={{...linkStyle, backgroundColor: lightBaseTheme.palette.primary2Color}}
-            to={`/referendum/${tema}/${this.props.argomenti[tema][0]}`}
+            to={`${tema}/${this.props.argomenti[tema][0]}`}
             className={this.props.tema === tema ? 'active grey230-active' : ''}>
             <ToolbarTitle style={titleStyle} text={humanize(tema)} />
           </NavHoverLink>
@@ -70,7 +70,7 @@ export default class TemaToolBar extends Component {
     } else {
       const argomenti = this.props.temi.map((tema) => (
         <MenuItem key={genUnique()} primaryText={humanize(tema)}
-          containerElement={<NavLink to={`/referendum/${tema}/${this.props.argomenti[tema][0]}`} />}
+          containerElement={<NavLink to={`${tema}/${this.props.argomenti[tema][0]}`} />}
         />
         )
       )

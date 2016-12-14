@@ -40,7 +40,7 @@ import Home from './Home.js'
 import About from './About.js'
 import Argomento from './Argomento.js'
 
-import { referendum } from './theorems.json'
+import { cannabis } from './theorems.json'
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
@@ -48,10 +48,10 @@ injectTapEventPlugin();
 ReactDOM.render(
   <MuiThemeProvider>
     <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
-      <Route path="/" referendum={referendum} component={App}>
+      <Route path="/" cannabis={cannabis} component={App}>
       	<IndexRedirect to="/home" />
-      	<Route path="/home" referendum={referendum} component={Home} />
-      	<Route path="/referendum/:tema/:argomento" referendum={referendum} component={Argomento} />
+      	<Route path="/home" cannabis={cannabis} component={Home} />
+      	<Route path="/:tema/:argomento" cannabis={cannabis} component={Argomento} />
         <Route path="/about" component={About} />
       </Route>
     </Router>

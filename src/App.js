@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Footer from './Footer.js'
 import Navigation from './Navigation.js'
 import { argumentsFromTopic } from "./Theorem.js"
-import Meta from './Meta.js'
+//import Meta from './Meta.js'
 import Sondaggio from './Sondaggio.js'
 
 
@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      argomenti: argumentsFromTopic(props.route.referendum)
+      argomenti: argumentsFromTopic(props.route.cannabis)
     }
   }
 

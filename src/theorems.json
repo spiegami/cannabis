@@ -1,5 +1,32 @@
 {
 	"cannabis": {
-
+    "mediche": {
+      "asd": {
+        "claim": "Asdasdasd",
+        "connector": "e",
+        "reasons": [{"claim":"basdbasdb"}]
+      }
+    },
+    "giuridiche": {
+      "asd": {
+        "claim": "Asdasdasd",
+        "connector": "e",
+        "reasons": [{"claim":"basdbasdb"}]
+      }
+    },
+    "culturali": {
+      "asd": {
+        "claim": "Asdasdasd",
+        "connector": "e",
+        "reasons": [{"claim":"basdbasdb"}]
+      }
+    },
+    "politiche": {
+      "asd": {
+        "claim": "Asdasdasd",
+        "connector": "e",
+        "reasons": [{"claim":"basdbasdb"}]
+      }
+    }
 	}
 }

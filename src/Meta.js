@@ -4,17 +4,17 @@ import DocumentMeta from 'react-document-meta';
 export default class Meta extends React.Component {
   render() {
     const meta = {
-      title: 'Spiegami - Referendum',
-      description: 'Tutti gli argomenti del sì e del no al referendum costituzionale del 4 dicembre 2016, spiegati tema per tema',
-      canonical: 'https://carlomartinucci.github.com/spiegami-referendum',
+      title: 'Spiegami - Cannabis',
+      description: 'Gli argomenti sulla liberalizzazione della Cannabis, tema per tema',
+      canonical: 'https://spiegami.github.com/cannabis',
       meta: {
         name: {
-          keywords: 'spiegami,referendum'
+          keywords: 'spiegami,cannabis,legalizzazione'
         },
         property: {
-          'og:url': "https://carlomartinucci.github.com/spiegami-referendum",
-          "og:title": "Spiegami il referendum",
-          "og:description": "Tutti gli argomenti del sì e del no al referendum costituzionale del 4 dicembre 2016, spiegati tema per tema",
+          'og:url': "https://spiegami.github.com/cannabis",
+          "og:title": 'Spiegami - Cannabis',
+          "og:description": 'Gli argomenti sulla liberalizzazione della Cannabis, tema per tema',
         }
       }
     };

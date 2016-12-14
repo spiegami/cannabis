@@ -7,7 +7,7 @@ import MailChimp from './MailChimp2.js'
 //      <div className="text-center fb-share" style={{marginTop: '30px'}}><FacebookShare/></div>
 export default class Footer extends Component {
   render() {
-    const hidden_fields = [{name: "nome", value: "valore"}]
+    //const hidden_fields = [{name: "nome", value: "valore"}]
 
     return (
       <div>
@@ -18,10 +18,6 @@ export default class Footer extends Component {
         <p>
           Pensato con amore da <Link to="/about">Carlo Martinucci</Link><br/>
           con il <Link to="/about">contributo</Link> e l'aiuto di tanti amici.
-        </p>
-        <p>
-          Materiale sul referendum tratto da<br/>
-          <a href="http://www.referendumcostituzionale2016.it/" target="_blank">referendumcostituzionale2016.it</a>
         </p>
       </div>
       </div>
